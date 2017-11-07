@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Licensing_appModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="epoa_Requests">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RequestorName" Type="nvarchar" MaxLength="50" />
+          <Property Name="RequestorUserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="RequestorEmail" Type="nvarchar" MaxLength="50" />
+          <Property Name="RequestorRegion" Type="nvarchar" MaxLength="60" />
+          <Property Name="RequestorPhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="AgentCode" Type="nvarchar" MaxLength="10" />
+          <Property Name="LOB" Type="nvarchar" MaxLength="30" />
+          <Property Name="AgentCode_1" Type="nvarchar" MaxLength="10" />
+          <Property Name="LOBR1" Type="nvarchar" MaxLength="30" />
+          <Property Name="AgentCode_2" Type="nvarchar" MaxLength="10" />
+          <Property Name="LOBR2" Type="nvarchar" MaxLength="30" />
+          <Property Name="AgentCode_3" Type="nvarchar" MaxLength="10" />
+          <Property Name="AgentName" Type="nvarchar" MaxLength="60" />
+          <Property Name="AgentAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="AgentAddress1" Type="nvarchar" MaxLength="100" />
+          <Property Name="AgentCity" Type="nvarchar" MaxLength="50" />
+          <Property Name="AgentState" Type="nvarchar" MaxLength="50" />
+          <Property Name="AgentZip" Type="nvarchar" MaxLength="50" />
+          <Property Name="Region" Type="nvarchar" MaxLength="50" />
+          <Property Name="RegionCode" Type="nvarchar" MaxLength="10" />
+          <Property Name="RegionPhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="AgencyEmail" Type="nvarchar" MaxLength="50" />
+          <Property Name="ContactName" Type="nvarchar" MaxLength="70" />
+          <Property Name="ContactPhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="DeliverToAttentionOf" Type="nvarchar" MaxLength="500" />
+          <Property Name="RO_Instructions" Type="nvarchar" MaxLength="500" />
+          <Property Name="RO_RequestDate" Type="datetime" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="POA_Names" Type="nvarchar" MaxLength="500" />
+          <Property Name="POA_CityState" Type="nvarchar" MaxLength="50" />
+          <Property Name="LicensingHandler" Type="nvarchar" MaxLength="50" />
+          <Property Name="LicensingHandlerFullName" Type="nvarchar" MaxLength="50" />
+          <Property Name="POAEmailDate" Type="datetime" />
+          <Property Name="POAEmail1" Type="nvarchar" MaxLength="50" />
+          <Property Name="POAEmail2" Type="nvarchar" MaxLength="50" />
+          <Property Name="POAEmail3" Type="nvarchar" MaxLength="50" />
+          <Property Name="POAEmail4" Type="nvarchar" MaxLength="50" />
+          <Property Name="HO_Instructions" Type="nvarchar" MaxLength="500" />
+          <Property Name="ChangeDate" Type="datetime" />
+          <Property Name="ChangeUser" Type="nvarchar" MaxLength="50" />
+          <Property Name="POAPath" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="Licensing_appModelStoreContainer">
+          <EntitySet Name="epoa_Requests" EntityType="Self.epoa_Requests" Schema="licensing_admin4523" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Licensing_appModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="epoa_Requests">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RequestorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RequestorUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RequestorEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RequestorRegion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="RequestorPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AgentCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="LOB" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="AgentCode_1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="LOBR1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="AgentCode_2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="LOBR2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="AgentCode_3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="AgentName" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="AgentAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="AgentAddress1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="AgentCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AgentState" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AgentZip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RegionCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="RegionPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AgencyEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ContactName" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Name="ContactPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DeliverToAttentionOf" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RO_Instructions" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RO_RequestDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="POA_Names" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="POA_CityState" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LicensingHandler" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LicensingHandlerFullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="POAEmailDate" Type="DateTime" Precision="3" />
+          <Property Name="POAEmail1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="POAEmail2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="POAEmail3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="POAEmail4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HO_Instructions" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ChangeDate" Type="DateTime" Precision="3" />
+          <Property Name="ChangeUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="POAPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="Licensing_appEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="epoa_Requests" EntityType="Self.epoa_Requests" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Licensing_appModelStoreContainer" CdmEntityContainer="Licensing_appEntities">
+          <EntitySetMapping Name="epoa_Requests">
+            <EntityTypeMapping TypeName="Licensing_appModel.epoa_Requests">
+              <MappingFragment StoreEntitySet="epoa_Requests">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="RequestorName" ColumnName="RequestorName" />
+                <ScalarProperty Name="RequestorUserName" ColumnName="RequestorUserName" />
+                <ScalarProperty Name="RequestorEmail" ColumnName="RequestorEmail" />
+                <ScalarProperty Name="RequestorRegion" ColumnName="RequestorRegion" />
+                <ScalarProperty Name="RequestorPhone" ColumnName="RequestorPhone" />
+                <ScalarProperty Name="AgentCode" ColumnName="AgentCode" />
+                <ScalarProperty Name="LOB" ColumnName="LOB" />
+                <ScalarProperty Name="AgentCode_1" ColumnName="AgentCode_1" />
+                <ScalarProperty Name="LOBR1" ColumnName="LOBR1" />
+                <ScalarProperty Name="AgentCode_2" ColumnName="AgentCode_2" />
+                <ScalarProperty Name="LOBR2" ColumnName="LOBR2" />
+                <ScalarProperty Name="AgentCode_3" ColumnName="AgentCode_3" />
+                <ScalarProperty Name="AgentName" ColumnName="AgentName" />
+                <ScalarProperty Name="AgentAddress" ColumnName="AgentAddress" />
+                <ScalarProperty Name="AgentAddress1" ColumnName="AgentAddress1" />
+                <ScalarProperty Name="AgentCity" ColumnName="AgentCity" />
+                <ScalarProperty Name="AgentState" ColumnName="AgentState" />
+                <ScalarProperty Name="AgentZip" ColumnName="AgentZip" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="RegionCode" ColumnName="RegionCode" />
+                <ScalarProperty Name="RegionPhone" ColumnName="RegionPhone" />
+                <ScalarProperty Name="AgencyEmail" ColumnName="AgencyEmail" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+                <ScalarProperty Name="DeliverToAttentionOf" ColumnName="DeliverToAttentionOf" />
+                <ScalarProperty Name="RO_Instructions" ColumnName="RO_Instructions" />
+                <ScalarProperty Name="RO_RequestDate" ColumnName="RO_RequestDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="POA_Names" ColumnName="POA_Names" />
+                <ScalarProperty Name="POA_CityState" ColumnName="POA_CityState" />
+                <ScalarProperty Name="LicensingHandler" ColumnName="LicensingHandler" />
+                <ScalarProperty Name="LicensingHandlerFullName" ColumnName="LicensingHandlerFullName" />
+                <ScalarProperty Name="POAEmailDate" ColumnName="POAEmailDate" />
+                <ScalarProperty Name="POAEmail1" ColumnName="POAEmail1" />
+                <ScalarProperty Name="POAEmail2" ColumnName="POAEmail2" />
+                <ScalarProperty Name="POAEmail3" ColumnName="POAEmail3" />
+                <ScalarProperty Name="POAEmail4" ColumnName="POAEmail4" />
+                <ScalarProperty Name="HO_Instructions" ColumnName="HO_Instructions" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="ChangeUser" ColumnName="ChangeUser" />
+                <ScalarProperty Name="POAPath" ColumnName="POAPath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
