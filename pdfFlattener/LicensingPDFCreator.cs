@@ -36,7 +36,7 @@ namespace pdfFlattener
 
                 string outputFileTemplate = ConfigurationManager.AppSettings["saveFileNameTemplate"];
 
-                string outputFileName = outputFileTemplate.Replace("[AgentCode_1]", epoa.AgentCode_1).Replace("[id]", epoa.id.ToString());
+                string outputFileName = outputFileTemplate.Replace("[AgentCode]", epoa.AgentCode).Replace("[id]", epoa.id.ToString());
                 string outputPath = ConfigurationManager.AppSettings["savePDFPath"] + @"\" + outputFileName;
 
                 FileStream fs = File.Create(outputPath);

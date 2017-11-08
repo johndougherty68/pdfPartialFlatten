@@ -22,7 +22,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pdfFlattener.LicensingPDFCreator.Create(37);
+            pdfFlattener.LicensingPDFCreator.Create(63);
             //pdfFlattener.pdfFlattener.Add("TopmostSubform[0].Page1[0].NameList2[0]", "23232323");
             //pdfFlattener.pdfFlattener.Add("TopmostSubform[0].Page1[0].BT[0]", "dsdssdsd");
             //pdfFlattener.pdfFlattener.Add("TopmostSubform[0].Page1[0].BT[1]", "6666666655445");

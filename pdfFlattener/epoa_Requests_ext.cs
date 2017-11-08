@@ -12,15 +12,15 @@ namespace pdfFlattener
     public partial class epoa_Requests
     {
         /// <summary>
-        /// Returns a string with the AgentCode_1 and AgentName fields
+        /// Returns a string with the AgentCode and AgentName fields
         /// </summary>
-        /// <returns>The AgentCode_1 and AgentName of the record</returns>
+        /// <returns>The AgentCode and AgentName of the record</returns>
         public string GetAgentString()
         {
             string res = "";
             try
             {
-                res += this.AgentCode_1 + " ";
+                res += this.AgentCode + " ";
                 res += this.AgentName + " ";
                 return res;
             }
